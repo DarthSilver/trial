@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Video Minimizer",
+    "version": "0.0.1",
+    "description": "Minimizes videos when switching tabs.",
+    "permissions": ["activeTab"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "Screenshot 2023-11-03 at 11.20.18AM.png",
+        "48": "Screenshot 2023-11-03 at 11.20.18AM.png",
+        "128": "Screenshot 2023-11-03 at 11.20.18AM.png"
+      }
+    },
+    "icons": {
+        "16": "Screenshot 2023-11-03 at 11.20.18AM.png",
+        "48": "Screenshot 2023-11-03 at 11.20.18AM.png",
+        "128": "Screenshot 2023-11-03 at 11.20.18AM.png"
+      },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+
+  }
